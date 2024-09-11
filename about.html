@@ -97,22 +97,96 @@
             <h2 class="text-center mb-3">We'd Love to Hear From You!</h2>
             <p class="text-center">Please fill out the form below to share your feedback or ask questions.</p>
             
-            <form action="" method="post" class="feedback-form">
+            <form action="" method="post" class="feedback-form1">
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name">
+                    <input type="text" class="form-control" id="name" name="name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" >
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" class="form-control" id="phone" name="phone" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Contact Method:</label><br>
+                    <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                    <label for="contact-email">Email</label>
+                    <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                    <label for="contact-phone">Phone</label>
+                </div>
+                <div class="form-group">
+                    <label>Subscribe to Newsletter:</label><br>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Yes, I'd like to receive updates.</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
+        
+        <div class="container mt-5">
+            <h2 class="text-center mb-3">Create Account</h2>
+            <p class="text-center">Please fill out the form below to create an account.</p>
+            
+            <form action="" method="post" class="feedback-form2">
+                <div class="form-group">
+                    <label for="name2">Name:</label>
+                    <input type="text" class="form-control" id="name2" name="name2" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="con-password">Confirm Password:</label>
+                    <input type="password" class="form-control" id="con-password" name="con-password" required>
+                </div>
+                <div class="form-group">
+                    <label>Account Type:</label><br>
+                    <input type="radio" id="student" name="account-type" value="student" required>
+                    <label for="student">Student</label>
+                    <input type="radio" id="faculty" name="account-type" value="faculty">
+                    <label for="faculty">Faculty</label>
+                    <input type="radio" id="staff" name="account-type" value="staff">
+                    <label for="staff">Staff</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        
+        <div class="container mt-5">
+            <h2 class="text-center mb-3">Recover Account</h2>
+            <p class="text-center">Please fill out the form below to recover your account.</p>
+            
+            <form action="" method="post" class="feedback-form3">
+                <div class="form-group">
+                    <label for="email2">Email:</label>
+                    <input type="email" class="form-control" id="email2" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="con-email">Recovery Email:</label>
+                    <input type="email" class="form-control" id="con-email" name="con-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password2">New Password:</label>
+                    <input type="password" class="form-control" id="password2" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label>Reason for Recovery:</label><br>
+                    <input type="checkbox" id="forgot-password" name="reason" value="forgot-password">
+                    <label for="forgot-password">Forgot Password</label>
+                    <input type="checkbox" id="account-hacked" name="reason" value="account-hacked">
+                    <label for="account-hacked">Account Hacked</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>                
         
     </main>        
     
