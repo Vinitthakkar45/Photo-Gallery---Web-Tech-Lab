@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment - Photo Gallery</title>
+    <link rel="icon" href="public/logo.png" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="public/logo.png" alt="Logo" class="logo">
+        <a class="navbar-brand" href="index.html"> Moment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="hero-section">
+        <div class="container text-center text-white">
+            <h1>Welcome to Moment</h1>
+            <p>Capture and cherish every moment</p>
+            <a href="gallery.html" class="btn btn-primary btn-lg">Explore Gallery</a>
+        </div>
+    </header>
+    
+    <main class="container mt-5">
+        <div class="text-center mb-5">
+            <h2>Featured Photos</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="public/image18.jpg" class="card-img-top" alt="Photo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Cars</h5>
+                        <p class="card-text">Cool Driving Angles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="public/image17.jpg" class="card-img-top" alt="Photo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Asthetics</h5>
+                        <p class="card-text">Anime Asthetics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="public/image15.jpg" class="card-img-top" alt="Photo 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bikers</h5>
+                        <p class="card-text">Crazy Stunt shots.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Moment by Vinit</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
